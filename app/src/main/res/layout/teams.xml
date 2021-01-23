@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bat_bg"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:padding="5dp"
+                android:hint="   Search"
+                android:drawableLeft="@drawable/ic_baseline_search_24"/>
+
+        </LinearLayout>
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:layout_marginRight="5dp"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+
+        <!--            android:weightSum="4">-->
+
+
+        <!--            <TextView-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:layout_weight="0.5"-->
+        <!--                android:background="@color/colorPrimaryLite"-->
+
+        <!--                android:gravity="center"-->
+        <!--                android:paddingTop="7dp"-->
+        <!--                android:paddingBottom="7dp"-->
+        <!--                android:text="S.No"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="15dp"-->
+        <!--                android:textStyle="bold" />-->
+        <!--            <View-->
+        <!--                android:layout_width="1dp"-->
+        <!--                android:layout_height="match_parent"/>-->
+        <!--            <TextView-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:layout_weight="1.2"-->
+        <!--                android:background="@color/colorPrimaryLite"-->
+
+        <!--                android:gravity="center"-->
+        <!--                android:paddingTop="7dp"-->
+        <!--                android:paddingBottom="7dp"-->
+        <!--                android:text="Cus.Name"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="15dp"-->
+        <!--                android:textStyle="bold" />-->
+        <!--            <View-->
+        <!--                android:layout_width="1dp"-->
+        <!--                android:layout_height="match_parent"/>-->
+        <!--            <TextView-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:background="@color/colorPrimaryLite"-->
+        <!--                android:gravity="center"-->
+        <!--                android:paddingTop="7dp"-->
+        <!--                android:paddingBottom="7dp"-->
+        <!--                android:text="Mobile No"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="15dp"-->
+        <!--                android:textStyle="bold" />-->
+        <!--            <View-->
+        <!--                android:layout_width="1dp"-->
+        <!--                android:layout_height="match_parent"/>-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:background="@color/colorPrimaryLite"-->
+
+        <!--                android:gravity="center"-->
+        <!--                android:paddingTop="7dp"-->
+        <!--                android:paddingBottom="7dp"-->
+        <!--                android:text="Status"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="15dp"-->
+        <!--                android:textStyle="bold" />-->
+        <!--            <View-->
+        <!--                android:layout_width="1dp"-->
+        <!--                android:layout_height="match_parent"/>-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:layout_weight="0.4"-->
+        <!--                android:background="@color/colorPrimaryLite"-->
+
+        <!--                android:gravity="center"-->
+        <!--                android:paddingTop="7dp"-->
+        <!--                android:paddingBottom="7dp"-->
+
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="15dp"-->
+        <!--                android:textStyle="bold" />-->
+
+
+
+
+
+
+        <!--        </LinearLayout>-->
+
+        <ImageView
+            android:id="@+id/nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+
+            android:src="@drawable/nodata"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_margin="7dp"
+            tools:itemCount="30"
+            tools:listitem="@layout/list_view_teams"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:contentDescription="Add"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/add_group"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

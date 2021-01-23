@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bat_bg"
+
+
+    android:layout_height="match_parent"
+    >
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/top_navigation_constraint"
+
+        android:layout_marginTop="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:elevation="3dp"
+
+        app:bnc_mode="inside">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/new_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            android:layout_marginRight="10dp"
+            app:bt_colorActive="@color/purple_active"
+            app:bt_colorInactive="@color/purple_inactive"
+            app:bt_icon="@drawable/bats_man"
+
+            app:bt_shape="@drawable/transition_background_drawable_default"
+
+            app:bt_title="New Match"
+            app:bt_titlePadding="8dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="@color/purple_active"
+            app:bt_colorInactive="@color/purple_inactive"
+            android:layout_marginRight="10dp"
+
+            app:bt_icon="@drawable/team"
+            app:bt_padding="12dp"
+            app:bt_shape="@drawable/transition_background_drawable_default"
+            app:bt_title="Manage Team"
+            app:bt_titlePadding="8dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="@color/purple_active"
+            app:bt_colorInactive="@color/purple_inactive"
+            android:layout_marginRight="10dp"
+
+            app:bt_icon="@drawable/history"
+            app:bt_padding="12dp"
+            app:bt_shape="@drawable/transition_background_drawable_default"
+            app:bt_title="History"
+            app:bt_titlePadding="8dp" />
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="@color/purple_active"
+            app:bt_colorInactive="@color/purple_inactive"
+            app:bt_icon="@drawable/settings"
+            app:bt_padding="12dp"
+            app:bt_shape="@drawable/transition_background_drawable_default"
+            app:bt_title="Settings"
+            app:bt_titlePadding="8dp" />
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_frame"/>
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:background="@drawable/bg1111"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_margin="6dp"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+
+
+
+        android:weightSum="4">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.9">
+
+            <TextView
+                android:id="@+id/team_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Team A"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_baseline_edit_24"
+
+            android:gravity="center"
+
+             android:textColor="@color/black"
+
+            />
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:src="@drawable/delete"
+
+            android:gravity="center"
+
+             android:textColor="@color/black"
+
+            />
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="7dp"
+
+        android:weightSum="4">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                 android:textColor="@color/black"
+                android:text="Total Matches"/>
+            <TextView
+                android:id="@+id/matches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                 android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="0"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                 android:textColor="@color/black"
+                android:text="Won Matches"/>
+            <TextView
+                android:id="@+id/won"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                 android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="0"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                 android:textColor="@color/black"
+                android:text="Lost Matches"/>
+            <TextView
+                android:id="@+id/lost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                 android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="0"/>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
