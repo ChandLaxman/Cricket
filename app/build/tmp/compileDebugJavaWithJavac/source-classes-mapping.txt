@@ -1,41 +1,5 @@
 com/example/myapplication/services/GlobalValue.java
  com.example.myapplication.services.GlobalValue
-com/example/myapplication/services/KittenViewHolder.java
- com.example.myapplication.services.KittenViewHolder
-com/example/myapplication/History_fragment.java
- com.example.myapplication.History_fragment
-com/example/myapplication/services/DatabaseHelper.java
- com.example.myapplication.services.DatabaseHelper
-com/example/myapplication/MainActivity.java
- com.example.myapplication.MainActivity
- com.example.myapplication.MainActivity$1
- com.example.myapplication.MainActivity$2
-com/example/myapplication/adapter/Players_Adapter.java
- com.example.myapplication.adapter.Players_Adapter
- com.example.myapplication.adapter.Players_Adapter$1
- com.example.myapplication.adapter.Players_Adapter$2
- com.example.myapplication.adapter.Players_Adapter$3
- com.example.myapplication.adapter.Players_Adapter$4
- com.example.myapplication.adapter.Players_Adapter$ViewHolder
-com/example/myapplication/services/KittenClickListener.java
- com.example.myapplication.services.KittenClickListener
-com/example/myapplication/services/DetailsTransition.java
- com.example.myapplication.services.DetailsTransition
-com/example/myapplication/Teams_fragment.java
- com.example.myapplication.Teams_fragment
- com.example.myapplication.Teams_fragment$1
- com.example.myapplication.Teams_fragment$2
- com.example.myapplication.Teams_fragment$3
-com/example/myapplication/Match_fragment.java
- com.example.myapplication.Match_fragment
-com/example/myapplication/Settings_fragment.java
- com.example.myapplication.Settings_fragment
-com/example/myapplication/BuildConfig.java
- com.example.myapplication.BuildConfig
-com/example/myapplication/models/Players_model.java
- com.example.myapplication.models.Players_model
-com/example/myapplication/models/Teams_model.java
- com.example.myapplication.models.Teams_model
 com/example/myapplication/DetailActivity.java
  com.example.myapplication.DetailActivity
  com.example.myapplication.DetailActivity$1
@@ -47,6 +11,14 @@ com/example/myapplication/DetailActivity.java
  com.example.myapplication.DetailActivity$5
  com.example.myapplication.DetailActivity$6
  com.example.myapplication.DetailActivity$7
+com/example/myapplication/History_fragment.java
+ com.example.myapplication.History_fragment
+com/example/myapplication/services/DatabaseHelper.java
+ com.example.myapplication.services.DatabaseHelper
+com/example/myapplication/MainActivity.java
+ com.example.myapplication.MainActivity
+ com.example.myapplication.MainActivity$1
+ com.example.myapplication.MainActivity$2
 com/example/myapplication/PlayersList.java
  com.example.myapplication.PlayersList
  com.example.myapplication.PlayersList$1
@@ -54,6 +26,15 @@ com/example/myapplication/PlayersList.java
  com.example.myapplication.PlayersList$3
  com.example.myapplication.PlayersList$4
  com.example.myapplication.PlayersList$5
+com/example/myapplication/services/KittenClickListener.java
+ com.example.myapplication.services.KittenClickListener
+com/example/myapplication/services/DetailsTransition.java
+ com.example.myapplication.services.DetailsTransition
+com/example/myapplication/Teams_fragment.java
+ com.example.myapplication.Teams_fragment
+ com.example.myapplication.Teams_fragment$1
+ com.example.myapplication.Teams_fragment$2
+ com.example.myapplication.Teams_fragment$3
 com/example/myapplication/adapter/Teams_Adapter.java
  com.example.myapplication.adapter.Teams_Adapter
  com.example.myapplication.adapter.Teams_Adapter$1
@@ -63,3 +44,22 @@ com/example/myapplication/adapter/Teams_Adapter.java
  com.example.myapplication.adapter.Teams_Adapter$5
  com.example.myapplication.adapter.Teams_Adapter$6
  com.example.myapplication.adapter.Teams_Adapter$ViewHolder
+com/example/myapplication/Settings_fragment.java
+ com.example.myapplication.Settings_fragment
+com/example/myapplication/BuildConfig.java
+ com.example.myapplication.BuildConfig
+com/example/myapplication/adapter/Players_Adapter.java
+ com.example.myapplication.adapter.Players_Adapter
+ com.example.myapplication.adapter.Players_Adapter$1
+ com.example.myapplication.adapter.Players_Adapter$2
+ com.example.myapplication.adapter.Players_Adapter$3
+ com.example.myapplication.adapter.Players_Adapter$4
+ com.example.myapplication.adapter.Players_Adapter$ViewHolder
+com/example/myapplication/models/Teams_model.java
+ com.example.myapplication.models.Teams_model
+com/example/myapplication/Match_fragment.java
+ com.example.myapplication.Match_fragment
+com/example/myapplication/models/Players_model.java
+ com.example.myapplication.models.Players_model
+com/example/myapplication/services/KittenViewHolder.java
+ com.example.myapplication.services.KittenViewHolder

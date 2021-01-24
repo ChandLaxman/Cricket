@@ -36,6 +36,9 @@ import androidx.core.content.ContextCompat;
 
 import com.example.myapplication.adapter.Players_Adapter;
 import com.example.myapplication.models.Players_model;
+import com.example.myapplication.players.Player_batting_fragment;
+import com.example.myapplication.players.Player_bowling_fragment;
+import com.example.myapplication.players.Player_fielding_fragment;
 import com.example.myapplication.services.DatabaseHelper;
 import com.example.myapplication.services.GlobalValue;
 import com.gauravk.bubblenavigation.BubbleNavigationLinearView;
@@ -106,6 +109,12 @@ public class DetailActivity extends AppCompatActivity {
                 }
             }
         }
+        image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AddTeamPOPUP(getIntent());
+            }
+        });
 
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -146,7 +155,7 @@ public class DetailActivity extends AppCompatActivity {
                 alertDialogBuilder.setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        finish();
+                      dialog.dismiss();
                     }
                 });
 
@@ -163,21 +172,22 @@ public class DetailActivity extends AppCompatActivity {
 
         }
         top_navigation_constraint = (BubbleNavigationLinearView) findViewById(R.id.top_navigation_constraint);
-
+        getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, new Player_batting_fragment())
+                .commit();
         top_navigation_constraint.setNavigationChangeListener(new BubbleNavigationChangeListener() {
             @Override
             public void onNavigationChanged(View view, int position) {
                 //navigation changed, do something
                 if (position == 0) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, new Match_fragment())
+                    getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, new Player_batting_fragment())
                             .commit();
                 }
                 if (position == 1) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, new Teams_fragment())
+                    getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, new Player_bowling_fragment())
                             .commit();
                 }
                 if (position == 2) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, new History_fragment())
+                    getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, new Player_fielding_fragment())
                             .commit();
                 }
             }

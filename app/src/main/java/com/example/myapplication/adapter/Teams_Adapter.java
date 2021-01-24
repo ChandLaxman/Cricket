@@ -1,8 +1,10 @@
 package com.example.myapplication.adapter;
 
 
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -112,27 +114,51 @@ String edit_item_id;
 
             }
         });
+
         holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
 
-                action_team_id=list_data_filtered.get(position).getTeam_id();
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(mcontext);
+                alertDialogBuilder.setMessage("Are you sure, You wanted Delete this Player");
+                alertDialogBuilder.setPositiveButton("yes",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
 
-                boolean isdeleted=mydb.delete_team(action_team_id);
-                if(isdeleted){
-                    Toast.makeText(mcontext,"Deleted",Toast.LENGTH_SHORT).show();
-                    Teams_fragment.Get_Team_details();
 
-                }else {
-                    Toast.makeText(mcontext,"Failed to Deleted",Toast.LENGTH_SHORT).show();
+                                action_team_id=list_data_filtered.get(position).getTeam_id();
 
-                }
+                                boolean isdeleted=mydb.delete_team(action_team_id);
+                                if(isdeleted){
+                                    Toast.makeText(mcontext,"Deleted",Toast.LENGTH_SHORT).show();
+                                    Teams_fragment.Get_Team_details();
 
+                                }else {
+                                    Toast.makeText(mcontext,"Failed to Deleted",Toast.LENGTH_SHORT).show();
+
+                                }
+
+
+                            }
+                        });
+
+                alertDialogBuilder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+
+                AlertDialog alertDialog = alertDialogBuilder.create();
+                alertDialog.show();
 
 
             }
         });
+
+
 
  holder.main_layout.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -112,21 +112,21 @@
 
             app:bt_shape="@drawable/transition_background_drawable_default"
 
-            app:bt_title="New Match"
+            app:bt_title="Batting"
             app:bt_titlePadding="8dp" />
 
         <com.gauravk.bubblenavigation.BubbleToggleView
             android:id="@+id/team"
-            android:layout_width="wrap_content"
+            android:layout_width="38dp"
             android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
             app:bt_colorActive="@color/purple_active"
             app:bt_colorInactive="@color/purple_inactive"
-            android:layout_marginRight="10dp"
 
-            app:bt_icon="@drawable/team"
+            app:bt_icon="@drawable/bowl_icon"
             app:bt_padding="12dp"
             app:bt_shape="@drawable/transition_background_drawable_default"
-            app:bt_title="Manage Team"
+            app:bt_title="Bowling"
             app:bt_titlePadding="8dp" />
 
         <com.gauravk.bubblenavigation.BubbleToggleView
@@ -137,10 +137,10 @@
             app:bt_colorInactive="@color/purple_inactive"
             android:layout_marginRight="10dp"
 
-            app:bt_icon="@drawable/history"
+            app:bt_icon="@drawable/fielding_icon"
             app:bt_padding="12dp"
             app:bt_shape="@drawable/transition_background_drawable_default"
-            app:bt_title="History"
+            app:bt_title="Fielding"
             app:bt_titlePadding="8dp" />
     </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
 

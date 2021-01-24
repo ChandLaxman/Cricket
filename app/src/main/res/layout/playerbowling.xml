@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg1111"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Matches"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+
+                        />
+                    <TextView
+                        android:id="@+id/matches"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg1111"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Innings"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+
+                        />
+                    <TextView
+                        android:id="@+id/innings"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg1111"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Overs"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+
+                        />
+                    <TextView                        android:id="@+id/overs"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg1111"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Maidens"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+
+                        />
+                    <TextView                            android:id="@+id/maidens"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg1111"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Wickets"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+
+                        />
+                    <TextView
+                        android:id="@+id/wickets"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg1111"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Runs"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+
+                        />
+                    <TextView
+                        android:id="@+id/runs"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg1111"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="Best
+                         Bowling"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+
+                        />
+                    <TextView
+                        android:id="@+id/bestbowling"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg1111"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="Economy
+Rate"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+
+                        />
+                    <TextView
+                        android:id="@+id/economyrate"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg1111"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Strike Rate"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+
+                        />
+                    <TextView
+                        android:id="@+id/strike_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg1111"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Average"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+
+                        />
+                    <TextView
+                        android:id="@+id/bowl_average"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg1111"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Wides"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+
+                        />
+                    <TextView
+                        android:id="@+id/wides"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg1111"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="No Balls"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+
+                        />
+                    <TextView
+                        android:id="@+id/noballs"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg1111"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Dot Balls"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+
+                        />
+                    <TextView
+                        android:id="@+id/dot_balls"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg1111"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Hatricks"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+
+                        />
+                    <TextView
+                        android:id="@+id/hatricks"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg1111"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="4 Wickets"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+
+                        />
+                    <TextView
+                        android:id="@+id/wicket_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
